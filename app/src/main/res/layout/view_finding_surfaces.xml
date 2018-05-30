@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <com.arexperiments.justaline.view.DrawPrompt
+            android:id="@+id/draw_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:alpha="0"/>
+
+    <ImageView
+            android:id="@+id/image_tracking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="48dp"
+            android:paddingStart="48dp"
+            android:alpha="0.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/just_a_line_tracking_icon"
+            tools:ignore="ContentDescription"/>
+
+    <TextView
+            android:id="@+id/textView_looking"
+            android:text="@string/tracking_indicator_text_looking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:alpha="0.0"
+            style="@style/OverlayText"
+            app:layout_constraintEnd_toEndOf="@+id/image_tracking"
+            app:layout_constraintStart_toStartOf="@+id/image_tracking"
+            app:layout_constraintTop_toBottomOf="@+id/image_tracking"/>
+
+    <TextView
+            android:id="@+id/textView_cant_find"
+            android:text="@string/tracking_indicator_text_cant_find"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:alpha="0.0"
+            style="@style/OverlayText"
+            app:layout_constraintEnd_toEndOf="@+id/image_tracking"
+            app:layout_constraintStart_toStartOf="@+id/image_tracking"
+            app:layout_constraintTop_toBottomOf="@+id/image_tracking"/>
+    <TextView
+            android:id="@+id/textView_anchor"
+            android:text="@string/tracking_indicator_text_anchor_not_tracking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:alpha="0.0"
+            style="@style/OverlayText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_tracking"/>
+</android.support.constraint.ConstraintLayout>

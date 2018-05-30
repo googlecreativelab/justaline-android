@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#198acb</color>
+    <color name="accent">#25c0d5</color>
+
+    <color name="record_highlight">#fc0f1c</color>
+    <color name="menu_bg_semi_transparent">@color/black_75</color>
+    <color name="menu_line_semi_transparent_grey">#33E0E0E0</color>
+    <color name="view_background_transparent">@color/black_30</color>
+    <color name="draw_prompt_circle">#ccffffff</color>
+
+    <color name="bg_pair_view">@color/black_30</color>
+    <color name="bg_pair_tool_tip">@color/black_50</color>
+
+    <color name="ripple">#bbffffff</color>
+
+    <color name="pair_state_paired">#2555ff</color>
+    <color name="pair_state_partner_lost">@color/black_50</color>
+
+    <color name="button_bg_transparent">@color/black_70</color>
+
+    <color name="black_30">#4D000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_70">#B3000000</color>
+    <color name="black_75">#BF000000</color>
+
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+
+</resources>

@@ -1,0 +1,28 @@
+<resources>
+    <dimen name="brush_input_plus_padding">48dp</dimen>
+    <dimen name="brush_input_width">28dp</dimen>
+    <dimen name="brush_input_height">28dp</dimen>
+    <dimen name="brush_input_frame">32dp</dimen>
+    <item name="brush_scale_large" format="float" type="dimen">.9</item>
+    <item name="brush_scale_medium" format="float" type="dimen">.6</item>
+    <item name="brush_scale_small" format="float" type="dimen">.4</item>
+
+    <dimen name="padding">8dp</dimen>
+
+    <dimen name="brush_size_indicator_padding_top">0dp</dimen>
+    <dimen name="brush_size_indicator_padding_right">0dp</dimen>
+    <dimen name="brush_size_indicator_padding_left">0dp</dimen>
+
+    <dimen name="pair_animation_stay_put_width">200dp</dimen>
+    <dimen name="pair_animation_stay_put_height">200dp</dimen>
+
+    <dimen name="pair_animation_partner_discovery_width">82dp</dimen>
+    <dimen name="pair_animation_partner_discovery_height">96dp</dimen>
+
+    <dimen name="pair_animation_margin_bottom">14dp</dimen>
+
+    <id name="animation_view"/>
+
+    <dimen name="tooltip_offset">48dp</dimen>
+    <dimen name="tooltip_arrow_offset">24dp</dimen>
+</resources>

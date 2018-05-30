@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        tools:context="com.arexperiments.justaline.DrawARActivity">
+
+    <ImageButton
+            android:id="@+id/close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_bg_borderless_oval"
+            android:contentDescription="@string/content_description_back"
+            android:padding="16dp"
+            android:src="@drawable/ic_close"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            android:id="@+id/text_licenses_header"
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cool_sans_medium"
+            android:text="@string/title_third_party_licenses"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/close_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/close_button"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/text_licenses_header">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical">
+            <!-- Lottie -->
+            <TextView
+                    android:id="@+id/text_lottie_library_name"
+                    android:text="@string/lottie_library_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/LicenseTitle"/>
+
+            <TextView
+                    android:id="@+id/text_lottie_license_type"
+                    android:text="@string/apache_license_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/LicenseType"/>
+
+            <TextView
+                    android:id="@+id/text_lottie_license_body"
+                    android:text="@string/apache_license_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/LicenseBody"/>
+            <!-- Recordable Surface View -->
+            <TextView
+                    android:id="@+id/text_rsv_library_name"
+                    android:text="@string/rsv_library_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/LicenseTitle"/>
+
+            <TextView
+                    android:id="@+id/text_rsv_license_type"
+                    android:text="@string/apache_license_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/LicenseType"/>
+
+            <TextView
+                    android:id="@+id/text_rsv_license_body"
+                    android:text="@string/apache_license_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/LicenseBody"/>
+            <!-- Vecmath -->
+            <TextView
+                    android:id="@+id/text_vecmath_library_name"
+                    android:text="@string/vecmath_library_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/LicenseTitle"/>
+
+            <TextView
+                    android:id="@+id/text_vecmath_license_body"
+                    android:text="@string/vecmath_license"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/LicenseBody"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

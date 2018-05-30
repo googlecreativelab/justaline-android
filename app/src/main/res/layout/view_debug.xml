@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/build_info"
+                style="@style/OverlayText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_dark"
+                android:backgroundTint="@android:color/black"
+                android:maxLines="1"
+                android:textAlignment="textEnd"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.928"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="502dp"/>
+
+        <TextView
+                android:id="@+id/render_info"
+                style="@style/OverlayText"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_dark"
+                android:backgroundTint="@android:color/black"
+                android:textAlignment="viewEnd"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.944"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="466dp"/>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+            <TextView
+                    android:id="@+id/room_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="#1444"
+                    style="@style/OverlayText"
+                    android:background="@android:color/background_dark"
+                    android:backgroundTint="@android:color/black"
+                    android:textSize="11sp"
+                    android:paddingRight="16dp"/>
+            <TextView
+                    android:id="@+id/anchor_tracking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" style="@style/OverlayText"
+                    android:background="@android:color/background_dark"
+                    android:backgroundTint="@android:color/black"
+                    android:textSize="11sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

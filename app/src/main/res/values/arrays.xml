@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sessions_array">
+        <item>0 Sandbox A</item>
+        <item>1 Sandbox B</item>
+        <item>2 Dev</item>
+        <item>3 QA</item>
+    </string-array>
+</resources>

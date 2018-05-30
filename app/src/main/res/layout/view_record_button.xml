@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+            android:id="@+id/recording_background"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:src="@drawable/bg_record_recording"
+            tools:ignore="ContentDescription"/>
+
+    <com.arexperiments.justaline.view.RecordButtonProgressBar
+            android:id="@+id/progress"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"/>
+
+    <ImageView
+            android:id="@+id/white_background"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:paddingTop="2dp"
+            android:src="@drawable/ic_record_bg"
+            tools:ignore="ContentDescription"/>
+
+    <ImageView
+            android:id="@+id/red_dot"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_record_fg"
+            tools:ignore="ContentDescription"/>
+
+    <ImageView
+            android:id="@+id/red_square"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_gravity="center"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:src="@drawable/ic_record_stop"
+            tools:ignore="ContentDescription"/>
+
+</merge>

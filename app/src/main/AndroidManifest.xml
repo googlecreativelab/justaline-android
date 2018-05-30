@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Copyright 2016 Google Inc.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.arexperiments.justaline">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- Firebase -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+
+    <permission
+            android:name="${applicationId}.permission.C2D_MESSAGE"
+            android:protectionLevel="signature"/>
+
+    <uses-permission android:name="${applicationId}.permission.C2D_MESSAGE"/>
+    <!-- End Firebase -->
+
+    <uses-sdk android:minSdkVersion="24"/>
+
+    <uses-feature android:name="android.hardware.camera.ar" android:required="true"/>
+
+    <application
+            android:name="App"
+            android:allowBackup="false"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+                android:name="com.arexperiments.justaline.DrawARActivity"
+                android:resizeableActivity="false"
+                android:configChanges="orientation|screenSize"
+                android:label="@string/app_name"
+                android:screenOrientation="${screenOrientation}"
+                android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.arexperiments.justaline.PermissionsActivity"
+                android:theme="@style/AppTheme"
+                android:screenOrientation="portrait"/>
+
+        <provider
+                android:name="android.support.v4.content.FileProvider"
+                android:authorities="${applicationId}.fileprovider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/filepaths"/>
+        </provider>
+
+        <activity
+                android:name="com.arexperiments.justaline.AboutActivity"
+                android:label="@string/title_activity_about"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity
+                android:name="com.arexperiments.justaline.LicensesActivity"
+                android:label="@string/title_third_party_licenses"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <meta-data android:name="com.google.ar.core" android:value="required"/>
+        <meta-data
+                android:name="com.google.android.ar.API_KEY"
+                android:value="@string/ApiKey"/>
+        <meta-data
+                android:name="com.google.android.nearby.messages.API_KEY"
+                android:value="@string/ApiKey" />
+
+    </application>
+
+</manifest>

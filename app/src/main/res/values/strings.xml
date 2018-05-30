@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Copyright 2016 Google Inc.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Just a Line</string>
+
+    <!-- More menu -->
+    <string name="menu_about">About</string>
+    <string name="menu_share_app">Share App</string>
+    <string name="menu_clear">Clear Drawing</string>
+
+    <!-- Image and ImageButton Content Descriptions for Accessibility-->
+    <string name="content_description_undo">Undo</string>
+    <string name="content_description_join_friend">Open Join Friend Menu</string>
+    <string name="content_description_close_join_friend_menu">Close Join Friend Menu</string>
+    <string name="content_description_disconnect_from_friend">Disconnect</string>
+    <string name="content_description_share_video">Share Video</string>
+    <string name="content_description_save_video">Save Video</string>
+    <string name="content_description_back">Back to Drawing</string>
+    <string name="content_description_overflow_menu">More options</string>
+    <string name="content_description_large_brush">Large Brush</string>
+    <string name="content_description_medium_brush">Medium Brush</string>
+    <string name="content_description_small_brush">Small Brush</string>
+    <string name="content_description_select_brush">Change Brush Size</string>
+    <string name="content_description_jal_splash">Just a Line</string>
+    <string name="content_description_record">Record</string>
+    <string name="content_description_stop_recording">Stop Recording</string>
+
+    <!-- Permissions-->
+    <string name="title_activity_permissions">Permissions Required</string>
+    <string name="initial_permissions_required">Camera and audio permissions are required</string>
+    <string name="ask_me_again">Try again</string>
+    <string name="open_system_permissions">Open System Permissions</string>
+    <string name="storage_permission_rationale">We need storage permission to save your video</string>
+    <string name="ok">OK</string>
+    <string name="action_unavailable">Action unavailable</string>
+
+    <!-- urls -->
+    <string name="privacy_policy_url">https://www.google.com/policies/privacy/</string>
+    <string name="terms_url">https://www.google.com/policies/terms/</string>
+
+    <!-- Clear Drawing Dialog -->
+    <string name="clear_confirmation_message">Clear your drawing?</string>
+    <string name="clear_confirmation_title_paired">Clear your drawings?</string>
+    <string name="clear_confirmation_message_paired">This will delete your partner\'s lines\u00A0too</string>
+    <string name="clear">Clear</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Playback -->
+    <string name="playback_share">Share</string>
+    <string name="playback_share_text">#justaline</string>
+    <string name="playback_save">Save</string>
+
+    <!-- Playback Save strings -->
+    <string name="saved">Saved to %1$s directory</string>
+    <string name="could_not_save">Sorry, we couldn\'t save your video</string>
+
+    <!-- About -->
+    <string name="title_activity_about">About</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="about_text">Just a Line is an AR Experiment that lets you make simple drawings in augmented reality. Draw on your own or with a friend, then hit record and share what you made with #JustaLine.\n\nTo learn more about this project,\nvisit g.co/justaline.</string>
+    <string name="about_text_link">g.co/justaline</string>
+    <string name="jal_url">https://g.co/justaline</string>
+
+    <!-- Share -->
+    <string name="share_with">Share with</string>
+    <string name="share_app_message">https://g.co/justaline</string>
+
+    <!-- Searching for surfaces -->
+    <string name="tracking_indicator_text_looking">Looking for a place for your line</string>
+    <string name="tracking_indicator_text_cant_find">Can\'t find a place for your line</string>
+    <string name="tracking_indicator_text_anchor_not_tracking">Hmm… We can\'t find your\ndrawings.
+        Try going back to\nwhere you started.</string>
+
+    <!-- Draw prompt -->
+    <string name="draw_prompt">press your finger\nand move around</string>
+    <string name="draw_prompt_paired">Start drawing with\nyour partner</string>
+
+    <!-- Errors -->
+    <string name="start_recording_failed">Sorry, we couldn\'t record your video. Please try again.</string>
+    <string name="stop_recording_failed">Sorry, we couldn\'t record your video. Please try again.</string>
+    <string name="error_camera_not_available">Sorry, something went wrong. Please try again.</string>
+    <string name="error_resuming_session">Sorry, something went wrong</string>
+
+    <!-- AR Core errors -->
+    <string name="ar_not_supported">AR isn\'t supported on your phone</string>
+    <string name="install_arcore">Please install ARCore</string>
+    <string name="update_arcore">Please update ARCore</string>
+    <string name="update_app">Please update this app</string>
+
+    <!-- Co presence -->
+    <!-- Anchors -->
+    <string name="cancel_anchor" tools:keep="@string/cancel_anchor">Cancel</string>
+
+    <!-- Join Room -->
+
+    <!-- AR Sync -->
+    <string name="pair_looking_for_partner">Waiting for your partner.\n\nIt works best when you\’re side\u2011by\u2011side.</string>
+    <string name="pair_connected">Partner found!</string>
+    <string name="pair_look_at_same_thing">Make sure you and your partner are side\u2011by\u2011side looking at the same\u00A0thing</string>
+    <string name="content_description_pair_look_at_same_thing">Make sure you and your partner are side\u2011by\u2011side with your phones pointed at the same\u00A0thing</string>
+    <string name="pair_connect_phones">Stay put while we\nconnect your phones</string>
+    <string name="pair_synced">PAIRED!</string>
+    <string name="try_again">Try Again</string>
+    <string name="ready">Ready</string>
+    <string name="pair_lost_connection">Oops… Lost connection\nto partner</string>
+    <string name="pair_no_data_connection_title">No connection</string>
+    <string name="pair_no_data_connection_body">Looks like it\'s pen and paper until we find some\u00A0internet</string>
+    <string name="pair_unknown_error">We\'re not sure what happened… but it did</string>
+    <!-- Pair anchor error: Keeping periods on messages that have multiple parts-->
+    <string name="pair_anchor_error">Something went wrong\nduring the sync</string>
+    <string name="pair_anchor_error_secondary">Try again in a more distinct\u00A0spot</string>
+    <string name="pair_global_localization_error">Couldn\'t find room. Are you in the right\u00A0spot?</string>
+    <string name="pair_global_no_anchor">There is no anchor in the global\u00A0room</string>
+    <string name="pair_global_connecting">Connecting to global room</string>
+    <string name="pair_disconnect">Disconnect? All drawings will be\u00A0erased.</string>
+    <string name="draw_with_partner">Draw with a partner</string>
+    <string name="pair_discovery_timeout">Hmm… we didn\'t find anyone nearby</string>
+    <string name="pair_waiting_for_partner">Waiting for your partner</string>
+
+    <string name="set_anchor">GET STARTED</string>
+    <string name="join_room">JOIN ROOM</string>
+
+    <!-- Paired UI -->
+    <string name="active">ACTIVE</string>
+    <string name="partner_lost">PARTNER\nLOST</string>
+    <string name="partner_paired">PAIRED</string>
+    <string name="drawing_session_ended">The drawing session has been reset</string>
+</resources>

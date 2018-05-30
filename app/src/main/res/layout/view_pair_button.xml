@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+            android:id="@+id/icon"
+            android:src="@drawable/selector_partner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:paddingTop="21dp"
+            android:paddingBottom="21dp"
+            android:background="@drawable/ripple_bg_borderless_oval"
+            tools:ignore="ContentDescription" />
+</android.support.constraint.ConstraintLayout>
